@@ -16,7 +16,6 @@ def get_connection_dict():
     passw = getenv('POSTGRES_PASSWORD', 'postgres')
     
     database_name = getenv('POSTGRES_DBNAME')
-    from os import environ
 
     return dict(
         host=host,

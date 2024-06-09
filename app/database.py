@@ -1,6 +1,6 @@
 from psycopg2 import OperationalError
 from sqlalchemy import create_engine
-from sqlalchemy import create_engine, pool
+from sqlalchemy import pool
 from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.engine.url import URL

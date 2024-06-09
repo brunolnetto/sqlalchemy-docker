@@ -1,7 +1,6 @@
 from database import Database
 from utils import get_db_uri
 from sqlalchemy import text
-from models import TokensDB
 from secrets import token_urlsafe
 
 # Create the database connection
