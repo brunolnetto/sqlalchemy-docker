@@ -7,7 +7,6 @@ from sqlalchemy.engine.url import URL
 from sqlalchemy_utils import database_exists, create_database
 
 from models import Base
-from utils import get_db_uri
 
 class Database:
     """
@@ -72,11 +71,9 @@ class Database:
             DatabaseError: If there's an error checking or creating the database.
         """
         # Get the database URI
-        db_uri = get_db_uri()
-        
         # Create the database if it does not exist
-        if not database_exists(db_uri): 
-            create_database(db_uri)
+        if not database_exists(self.uri): 
+            create_database(self.uri)
 
 
     def init(self):

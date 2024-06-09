@@ -9,12 +9,14 @@ def get_connection_dict():
     host = getenv('POSTGRES_HOST', 'localhost')
 
     # Get environment variables
-    port = int(getenv('POSTGRES_PORT', '5433'))
+    port = int(getenv('POSTGRES_PORT', '5432'))
 
     # Get the user and password
     user = getenv('POSTGRES_USER', 'postgres')
     passw = getenv('POSTGRES_PASSWORD', 'postgres')
+    
     database_name = getenv('POSTGRES_DBNAME')
+    from os import environ
 
     return dict(
         host=host,
