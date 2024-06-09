@@ -6,6 +6,8 @@ from secrets import token_urlsafe
 # Create the database connection
 uri = get_db_uri() 
 
+print(uri)
+
 db = Database(uri)
 
 # Insert data into the database
