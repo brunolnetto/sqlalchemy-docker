@@ -1,6 +1,6 @@
 services:
-  database:
-    container_name: db-crawler
+  postgres:
+    container_name: db
     image: postgres:14
     restart: unless-stopped
     networks:
