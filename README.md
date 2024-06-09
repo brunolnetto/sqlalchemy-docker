@@ -22,7 +22,7 @@ pip install -r requirements.txt
 3. Host docker container with PostgreSQL:
 
 ```bash
-docker run --name db -e POSTGRES_PASSWORD=mypassword -e POSTGRES_USER=myuser -e POSTGRES_DBNAME=mydb -p 5433:5433 -d mydb
+docker run --name db -e POSTGRES_PASSWORD=mypassword -e POSTGRES_USER=myuser -e POSTGRES_DBNAME=mydb -p 5433:5433 -d postgres
 ```
 
 OR 
