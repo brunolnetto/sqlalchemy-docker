@@ -1,10 +1,9 @@
-from .database import Database
+from database import Database
 from utils import get_db_uri
 from sqlalchemy import text
 
 # Create the database connection
 uri = get_db_uri() 
-print(uri)
 
 db = Database(uri)
 

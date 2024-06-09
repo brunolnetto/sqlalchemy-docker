@@ -4,12 +4,12 @@ from dotenv import load_dotenv
 def get_connection_dict():
     env_path = path.join(getcwd(), '.env')
     load_dotenv(env_path)
-
+    
     # Get the host
     host = getenv('POSTGRES_HOST', 'localhost')
 
     # Get environment variables
-    port = int(getenv('POSTGRES_PORT', '5432'))
+    port = int(getenv('POSTGRES_PORT', '5433'))
 
     # Get the user and password
     user = getenv('POSTGRES_USER', 'postgres')

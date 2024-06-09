@@ -6,8 +6,8 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.engine.url import URL
 from sqlalchemy_utils import database_exists, create_database
 
-from .database.models import Base
-from .utils import get_db_uri
+from models import Base
+from utils import get_db_uri
 
 class Database:
     """
