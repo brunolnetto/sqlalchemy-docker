@@ -3,8 +3,6 @@ services:
     container_name: db
     image: postgres:14
     restart: unless-stopped
-    networks:
-      - my_net
     env_file: .env
     expose:
       - "$POSTGRES_PORT"
@@ -12,9 +10,6 @@ services:
       - "$POSTGRES_PORT:$POSTGRES_PORT"
     volumes:
       - ./data:/var/lib/postgresql/data
-
-networks:
-  my_net:
 
 volumes:
   postgres_data:
