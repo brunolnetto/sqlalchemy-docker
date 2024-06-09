@@ -2,7 +2,7 @@
 
 This is an example of how to use SQLAlchemy to connect to a PostgreSQL database. The example includes a database class that manages the connection and session, a model class that represents a table in the database, and a utility class that gets the database URI from environment variables.
 
-## Installation
+## Reproduction
 
 1. Clone the repository
 
