@@ -1,7 +1,7 @@
 services:
   postgres:
     container_name: db
-    image: postgres:16
+    image: postgres:17
     restart: unless-stopped
     expose:
       - 5433
