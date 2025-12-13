@@ -1,5 +1,5 @@
 SQLAlchemy==2.0.40
-SQLAlchemy-Utils==0.41.2
+SQLAlchemy-Utils==0.42.1
 psycopg2==2.9.10
 pydantic==2.11.1
 python-dotenv==1.1.0
